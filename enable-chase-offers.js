@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name        Enable All Chase Offers
 // @description With one click, enable every offer available for your Chase credit card
-// @match       https://secure.chase.com/web/auth/dashboard*
+// @include https://secure.chase.com/web/auth/dashboard*
 // ==/UserScript==
 
 var button = document.createElement('button');
-button.innerText = "Click All";
-button.setAttribute("style", "width:300px; height:50px; background: #111; color: #ddd; position:fixed; top:110px; z-index:420; left:100px;");
+button.innerText = "Click All Offers";
+button.setAttribute("style", "width:300px; height:50px; background: #111; color: #ddd; position:fixed; top:170px; z-index:420; left:100px;");
 button.addEventListener("click", clickAllOffers)
 
 document.body.appendChild(button);
