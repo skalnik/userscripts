@@ -6,9 +6,10 @@
 
 setInterval(() => {
   const selectors = [
+    'shreddit-ad-post',
     'shreddit-comment-tree-ad',
     'shreddit-dynamic-ad-link',
-    'shreddit-sidebar-ad'
+    'shreddit-sidebar-ad',
   ]
 
   selectors.forEach((selector) => {
