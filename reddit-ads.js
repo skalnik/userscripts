@@ -8,4 +8,7 @@ setInterval(() => {
   document.querySelectorAll('shreddit-ad-post').forEach((elem) => {
     elem.style['display'] = 'none';
   })
+  document.querySelectorAll('shreddit-sidebar-ad').forEach((elem) => {
+    elem.style['display'] = 'none';
+  })
 }, 100);
