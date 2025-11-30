@@ -5,10 +5,15 @@
 // ==/UserScript==
 
 setInterval(() => {
-  document.querySelectorAll('shreddit-ad-post').forEach((elem) => {
-    elem.style['display'] = 'none';
-  })
-  document.querySelectorAll('shreddit-sidebar-ad').forEach((elem) => {
-    elem.style['display'] = 'none';
+  const selectors = [
+    'shreddit-comment-tree-ad',
+    'shreddit-dynamic-ad-link',
+    'shreddit-sidebar-ad'
+  ]
+
+  selectors.forEach((selector) => {
+    document.querySelectorAll(selector).forEach((elem) => {
+      elem.style['display'] = 'none';
+    })
   })
 }, 100);
