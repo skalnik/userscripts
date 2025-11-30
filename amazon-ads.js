@@ -6,9 +6,9 @@
 
 setInterval(() => {
   document.querySelectorAll('#ape_Detail_dp-ads-center-promo_Desktop_placement').forEach((elem) => {
-    elem.style['display'] = 'none';
+    elem.remove()
   })
   document.querySelectorAll('#ape_Detail_desktop-detail-ilm_desktop_placement').forEach((elem) => {
-    elem.style['display'] = 'none';
+    elem.remove()
   })
 }, 100);

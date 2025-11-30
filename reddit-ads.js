@@ -13,7 +13,7 @@ setInterval(() => {
 
   selectors.forEach((selector) => {
     document.querySelectorAll(selector).forEach((elem) => {
-      elem.style['display'] = 'none';
+      elem.remove()
     })
   })
-}, 100);
+}, 500);
